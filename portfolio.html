@@ -13,23 +13,23 @@
 <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <header class="line">
-    <div class="container header">
-      <a href="" lang="en" class="logo">Web<span class="logo-header">Studio</span></a>
-    <nav> 
-      <ul class="site-nav list">
-        <li class="item"><a class="link" href="./index.html">Студія</a></li>
-        <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-        <li class="item"><a class="link " href="">Контакти</a></li>
+  <header class="header">
+    <div class="header__container container">
+      <a href="" lang="en" class="logo">Web<span class="logo__header">Studio</span></a>
+    <nav class="nav"> 
+      <ul class="nav__list list">
+        <li class="nav__item"><a class="nav__link link" href="./index.html">Студія</a></li>
+        <li class="nav__item"><a class="nav__link link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
       </ul>
     </nav>
     <ul class="contacts list">
-      <li class="contact"><a class="link-contact" href="mailto:info@devstudio.com">
-        <svg class="envelopep" width="16" height="12">
+      <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
+        <svg class="contacts__envelopep" width="16" height="12">
         <use href="./images/icons.svg#icon-envelopep"></use>
       </svg> info@devstudio.com</a></li>
-      <li class="contact"> <a class="link-contact" href="tel:+380961111111">
-        <svg class="smartphone" width="10" height="16">
+      <li class="contacts__item"> <a class="contacts__link" href="tel:+380961111111">
+        <svg class="contacts__smartphone" width="10" height="16">
         <use href="./images/icons.svg#icon-smartphone"></use>
       </svg>+38 096 111 11 11</a>
       </li>
@@ -40,23 +40,23 @@
     <!-- Портфоліо -->
     <section class="section">
     <div class="container">
-    <h2 class="visually-hidden">Портфоліо</h2>
-    <ul class="auth-nav list"> 
-      <li class="nav"><button type="button" class="button-portfolio">Усі</button>
-      <li class="nav"><button type="button" class="button-portfolio">Веб-сайти</button>
-      <li class="nav"><button type="button" class="button-portfolio">Додатки</button>
-      <li class="nav"><button type="button" class="button-portfolio">Дизайн</button>
-      <li class="nav"><button type="button" class="button-portfolio">Маркетинг</button>
+    <h2 class="section__title--hidden">Портфоліо</h2>
+    <ul class="examples-nav list"> 
+      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Усі</button>
+      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Веб-сайти</button>
+      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Додатки</button>
+      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Дизайн</button>
+      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Маркетинг</button>
     </ul>
   </div>
     <div class="container">
       <ul class="example list">
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link"
                 ><div class="product-thumb">
                   <img src="./images/example1.jpg" alt="Технокряк" width="370" height="294" />
                   <div class="product-overlay">
-                    <p class="product-meta">
+                    <p class="product-overlay__meta">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
@@ -64,18 +64,18 @@
                   </div>
                 </div>
                 <div class="content">
-                  <h3 class="title">Технокряк</h3>
-                  <p class="text">Веб-сайт</p>
+                  <h3 class="content__title">Технокряк</h3>
+                  <p class="content__text">Веб-сайт</p>
                 </div>
                 </a>
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link"
           ><div class="product-thumb">
             <img src="./images/example2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -83,18 +83,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Постер New Orlean vs Golden Star</h3>
-            <p class="text">Дизайн</p>
+            <h3 class="content__title" lang="en">Постер New Orlean vs Golden Star</h3>
+            <p class="content__text">Дизайн</p>
           </div>
         </a>    
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link"
                 ><div class="product-thumb">
                   <img src="./images/example3.jpg" alt="Ресторан Seafood" width="370" height="294" />
                   <div class="product-overlay">
-                    <p class="product-meta">
+                    <p class="product-overlay__meta">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
@@ -102,18 +102,18 @@
                   </div>
                 </div>
                 <div class="content">
-                  <h3 class="title">Ресторан Seafood</h3>
-                  <p class="text">Додаток</p>
+                  <h3 class="content__title">Ресторан Seafood</h3>
+                  <p class="content__text">Додаток</p>
                 </div>
                 </a>
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example4.jpg" alt="Проєкт Prime" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -121,18 +121,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Проєкт Prime</h3>
-            <p class="text">Маркетинг</p>
+            <h3 class="content__title" lang="en">Проєкт Prime</h3>
+            <p class="content__text">Маркетинг</p>
           </div>
         </a>   
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example5.jpg" alt="Проєкт Boxes" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -140,18 +140,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Проєкт Boxes</h3>
-            <p class="text">Додаток</p>
+            <h3 class="content__title" lang="en">Проєкт Boxes</h3>
+            <p class="content__text">Додаток</p>
           </div>
         </a> 
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example6.jpg" alt="Inspiration has no Borders" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -159,18 +159,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Inspiration has no Borders</h3>
-            <p class="text">Веб-сайт</p>
+            <h3 class="content__title" lang="en">Inspiration has no Borders</h3>
+            <p class="content__text">Веб-сайт</p>
           </div>
         </a>
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example7.jpg" alt="Видання Limited Edition" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -178,18 +178,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Видання Limited Edition</h3>
-            <p class="text">Дизайн</p>
+            <h3 class="content__title" lang="en">Видання Limited Edition</h3>
+            <p class="content__text">Дизайн</p>
           </div>
         </a> 
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example8.jpg" alt="Проєкт LAB" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -197,18 +197,18 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Проєкт LAB</h3>
-            <p class="text">Маркетинг</p>
+            <h3 class="content__title" lang="en">Проєкт LAB</h3>
+            <p class="content__text">Маркетинг</p>
           </div>
         </a>
         </li>
 
-        <li class="example-job">
+        <li class="example__job">
           <a href="" class="link">
             <div class="product-thumb">
               <img src="./images/example9.jpg" alt="Growing Business" width="370" height="294">
             <div class="product-overlay">
-              <p class="product-meta">
+              <p class="product-overlay__meta">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                 приватну особу.
@@ -216,8 +216,8 @@
             </div>
           </div>
           <div class="content">
-            <h3 class="title" lang="en">Growing Business</h3>
-            <p class="text">Додаток</p>
+            <h3 class="content__title" lang="en">Growing Business</h3>
+            <p class="content__text">Додаток</p>
           </div>
         </a> 
         </li>
@@ -225,70 +225,70 @@
     </div>
   </section>
   </main>
-  <footer class="footer list">
-    <div class="container">
+  <footer class="footer">
+    <div class="container footer__container">
       <div class="inform">
         <div class="footer-contacts">
-          <a href="" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
+          <a href="" lang="en" class="logo">Web<span class="footer-contacts__logo">Studio</span></a>
           <address>
-            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="footer-contacts__address">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-address list">
-              <li class="mailto"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="footer-address__mailto"><a class="footer-address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li> <a class="footer-address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
           <div class="networks">
-          <p class="footer-join title">ПРИЄДНУЙТЕСЬ</p>
+          <p class="footer-title">ПРИЄДНУЙТЕСЬ</p>
           <ul class="socials list">
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link f link"
+                class="socials__link socials__link--footer link"
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="instagram icon"
               >
-                <svg class="socials-icon network" width="20" height="20">
+                <svg class="socials__icon network" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link f link"
+              class="socials__link socials__link--footer link"
                 href="https://twitter.com"
                 aria-label="Twitter icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="socials-icon network" width="20" height="20">
+                <svg class="socials__icon network" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link f link"
+              class="socials__link socials__link--footer link"
                 href="https://facebook.com"
                 aria-label="Facebook icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="socials-icon network" width="20" height="20">
+                <svg class="socials__icon network" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="socials__item">
               <a
-                class="socials-link f link"
+              class="socials__link socials__link--footer link"
                 href="https://linkedin.com"
                 aria-label="LinkedIn icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="socials-icon network" width="20" height="20">
+                <svg class="socials__icon network" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -297,20 +297,20 @@
         </div>
       </div>
   <div class="form newsletters">
-    <p class="footer-join title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-    <div class="newsletter-wrapper">
-      <label class="footer-email-label">
-        <input type="email" class="footer-input" name="email"  placeholder="E-mail">
+    <p class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+    <div class="subscribe">
+      <label class="subscribe__email">
+        <input type="email" class="subscribe__input" name="email"  placeholder="E-mail">
       </label>
-      <button type="submit" class="button subscribe-button">
+      <button type="submit" class="subscribe__button btn">
         Підписатися
-        <svg class="subscribe-icon" width="24" height="24">
+        <svg class="subscribe__icon" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
         </svg>
       </button>
 </div>
   </div>
   </div>
-  </footer>
+  </footer> 
 </body>
 </html>
