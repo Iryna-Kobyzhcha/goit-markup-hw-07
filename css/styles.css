@@ -150,7 +150,7 @@ transition: color 250ms var(--timing-function);
 .section {
   padding: 94px 0;
 }
-.hero__section {
+.hero {
   max-width: 1600px;
   background-color: var(--hero-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
@@ -181,20 +181,23 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 margin-bottom: 30px;
 }
-.hero__button {
+.btn {
   color: var(--second-text-color);
   background-color: var(--accent-color);
-  cursor: pointer;
+  
   font-family: inherit;
   font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
-text-align: center;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0 solid transparent;
+  text-align: center;
+  cursor: pointer;
+}
+.hero__button {
 min-width: 216px;;
-border-radius: 4px;
 padding: 10px 32px;
-border: 0 solid transparent;
 
 transition: background-color 250ms var(--timing-function),
 color 250ms var(--timing-function);
@@ -204,9 +207,7 @@ color 250ms var(--timing-function);
   color: var(--primary-text-color);
   background-color: var(--second-background-color);
 }
-.btn{
 
-}
 /* модальне вікно */
 .backdrop {
   position: fixed;
@@ -370,21 +371,10 @@ fill: var(--accent-color);
   margin-left: 7px;
 }
 .modal-form__submit {
-  /* position: absolute; */
   display: block;
   margin: 0 auto;
   min-width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--second-text-color);
-  background: var(--accent-color);
-  border-radius: 4px;
-  border: 0 solid transparent;
-  cursor: pointer;
-
   transition: filter 250ms var(--timing-function);
 }
 .modal-form__submit:hover,
@@ -581,21 +571,16 @@ color 250ms var(--timing-function);
 .examples-nav__button {
   color: var(--primary-text-color);
   background-color: var(--second-background-color);
-  cursor: pointer;
-  font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-letter-spacing: 0.03em;
-text-align: center;
-min-width: 73px;;
-border-radius: 4px;
-padding: 6px 22px;
-border: 0 solid transparent;
+  
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  min-width: 73px;;
+  padding: 6px 22px;
 
-transition: background-color 250ms var(--timing-function),
-color 250ms var(--timing-function),
-box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+  color 250ms var(--timing-function),
+  box-shadow 250ms var(--timing-function);
 }
 .examples-nav__button:hover, 
 .examples-nav__button:focus {
@@ -765,23 +750,13 @@ color: var(--second-text-color);
 }
 .subscribe__button {
   display: block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-width: 200px;
   height: 50px;
-  color: var(--second-text-color);
-  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px solid var(--accent-color);
 }
 .subscribe__icon {
 fill: var(--primary-background-color);
