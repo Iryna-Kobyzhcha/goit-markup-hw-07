@@ -10,7 +10,8 @@
 <!-- нормалізатор -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- стилі -->
-<link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/portfolio.min.css" />
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 </head>
 <body>
   <header class="header">
@@ -19,7 +20,7 @@
     <nav class="nav"> 
       <ul class="nav__list list">
         <li class="nav__item"><a class="nav__link link" href="./index.html">Студія</a></li>
-        <li class="nav__item"><a class="nav__link link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="nav__item"><a class="nav__link link current" href="./portfolio.html">Портфоліо</a></li>
         <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
       </ul>
     </nav>
@@ -42,11 +43,11 @@
     <div class="container">
     <h2 class="section__title--hidden">Портфоліо</h2>
     <ul class="examples-nav list"> 
-      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Усі</button>
-      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Веб-сайти</button>
-      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Додатки</button>
-      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Дизайн</button>
-      <li class="examples-nav__list"><button type="button" class="examples-nav__button btn">Маркетинг</button>
+      <li class="examples-nav__list"><button type="button" class="btn btn__examples-nav">Усі</button>
+      <li class="examples-nav__list"><button type="button" class="btn btn__examples-nav">Веб-сайти</button>
+      <li class="examples-nav__list"><button type="button" class="btn btn__examples-nav">Додатки</button>
+      <li class="examples-nav__list"><button type="button" class="btn btn__examples-nav">Дизайн</button>
+      <li class="examples-nav__list"><button type="button" class="btn btn__examples-nav">Маркетинг</button>
     </ul>
   </div>
     <div class="container">
@@ -226,10 +227,10 @@
   </section>
   </main>
   <footer class="footer">
-    <div class="container footer__container">
+    <div class="container container__footer">
       <div class="inform">
         <div class="footer-contacts">
-          <a href="" lang="en" class="logo">Web<span class="footer-contacts__logo">Studio</span></a>
+          <a href="" lang="en" class="logo">Web<span class="logo__footer">Studio</span></a>
           <address>
             <p class="footer-contacts__address">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-address list">
@@ -302,7 +303,7 @@
       <label class="subscribe__email">
         <input type="email" class="subscribe__input" name="email"  placeholder="E-mail">
       </label>
-      <button type="submit" class="subscribe__button btn">
+      <button type="submit" class="btn btn__subscribe">
         Підписатися
         <svg class="subscribe__icon" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
